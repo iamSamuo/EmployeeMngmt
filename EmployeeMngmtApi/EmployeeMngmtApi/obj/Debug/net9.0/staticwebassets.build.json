@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "FcSMWxyTEN+4S0jOqtqrHMxSHBpfOqfA0bXwpbZK2nM=",
+  "Source": "EmployeeMngmtApi",
+  "BasePath": "_content/EmployeeMngmtApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
