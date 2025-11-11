@@ -33,10 +33,15 @@ E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\ob
 E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.EmployeeMngmtApi.props
 E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.EmployeeMngmtApi.props
 E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\staticwebassets.pack.json
-E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\Employee.26988CEB.Up2Date
 E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\EmployeeMngmtApi.dll
 E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\refint\EmployeeMngmtApi.dll
 E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\EmployeeMngmtApi.pdb
 E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\EmployeeMngmtApi.genruntimeconfig.cache
 E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\ref\EmployeeMngmtApi.dll
+E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\bin\Debug\net9.0\Microsoft.OpenApi.dll
+E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\EmployeeMngmtApi.MvcApplicationPartsAssemblyInfo.cs
+E:\Projects\CShap and Angular\EmployeeMngmt\EmployeeMngmtApi\EmployeeMngmtApi\obj\Debug\net9.0\EmployeeMngmtApi.sourcelink.json

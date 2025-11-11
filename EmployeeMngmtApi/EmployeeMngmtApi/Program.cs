@@ -1,4 +1,5 @@
 using EmployeeMngmtApi.Data;
+using EmployeeMngmtApi.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeMngmtApi
@@ -23,10 +24,36 @@ namespace EmployeeMngmtApi
                         .AllowAnyHeader();
               });
           });
-            var app = builder.Build();
-            app.UseCors("MyCors");
+            //prepare the dependency injection for repository
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            // configure the application to use controllers
+            builder.Services.AddControllers();
+            // add swagger configuration on startup
+            // helps finding the endpoints(controllers)
+            builder.Services.AddEndpointsApiExplorer();
+            // instantiate swagger ui middleware
+            builder.Services.AddSwaggerGen();
 
-            app.MapGet("/", () => "Hello World!");
+            var app = builder.Build();
+            // add swagger middleware only when in development environment
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
+                    // removes the default api prefix and replace with swagger
+                    c.RoutePrefix = string.Empty;
+                }
+                );
+
+
+         
+            };
+            app.UseCors("MyCors");
+            // removed the default api route configuration
+            // allow swagger to call the controllers directly
+            app.MapControllers();
 
             app.Run();
         }
