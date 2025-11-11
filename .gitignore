@@ -1,0 +1,39 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+# IDE Settings
+.idea/
+*.iml
+.vscode/
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+
+# Build files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.bin
+
+# NuGet
+packages/
+project.lock.json
+project.assets.json
+
+# MSBuild props
+*.props
+
+# Static web assets
+staticwebassets/
+*.staticwebassets.json
+
+# Runtime config
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
