@@ -62,7 +62,7 @@ namespace EmployeeMngmtApi.Repositories
         {
             try
             {
-                return await _context.Employees.FirstOrDefaultAsync(e => e.Id == id);
+                return await _context.Employees.FindAsync(id);
 
             }
             catch (Exception ex)
@@ -76,7 +76,6 @@ namespace EmployeeMngmtApi.Repositories
         {
             try
             {
-
                 _context.Employees.Update(employee);
                await _context.SaveChangesAsync();
             }
