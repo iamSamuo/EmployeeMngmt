@@ -21,7 +21,7 @@ namespace EmployeeMngmtApi.Controllers
             {
                 await _employeeRepository.AddEmployeeAsync(employee);
                 // Return a Created response with the employee object  
-                return CreatedAtAction(nameof(GetEmployeeById), new {id = employee.Id});
+                return CreatedAtAction(nameof(GetEmployeeById), new {id = employee.Id},employee);
             }
             // Return BadRequest if the employee is null 
             return BadRequest("Employee data is null.");
@@ -43,19 +43,15 @@ namespace EmployeeMngmtApi.Controllers
             var employees = await _employeeRepository.GetAllAsync();
             return Ok(employees);
         }
-        [HttpPut]
-        public async Task<ActionResult<Employee>> UpdateEmployee(Employee employee)
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Employee>> UpdateEmployee(int id ,Employee employee)
         {
-            try
+          if(id != employee.Id)
             {
-                await _employeeRepository.UpdateEmployeeAsync(employee);
-                return Ok(employee);
+                return BadRequest();
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                // Employee doesn't exist
-                return NotFound($"Employee with Id = {employee.Id} not found.");
-            }
+          await _employeeRepository.UpdateEmployeeAsync(employee);
+            return CreatedAtAction(nameof(GetEmployeeById), new { id = employee.Id }, employee);
         }
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteEmployee(int id)
@@ -66,7 +62,8 @@ namespace EmployeeMngmtApi.Controllers
                 bool isDeleted = await _employeeRepository.DeleteEmployeeAsync(id);
                 if (isDeleted)
                 {
-                    return Ok($"Employee with Id = {id} deleted.");
+                    // nothing id returned (code: 204)
+                    return NoContent();
                 }
                 return StatusCode(500, "A problem happened while handling your request.");
             }
